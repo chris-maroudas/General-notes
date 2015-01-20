@@ -12,6 +12,14 @@ For example,
 `can :manage, Article`
 `can :manage, :dashboard`
 
+
+#### Translations
+If a model has translations include a default scope in your model to avoid N+1 queries
+`default_scope -> { includes(:translations) }`
+
+
+
+
 #### Contribute
 
 #####To contribute to this repo
