@@ -1,11 +1,16 @@
 # General-notes
 
 #### CanCanCan
-In every admin controller which has model you add this:
+In every admin controller which **has model** you add this:
 `load_and_authorize_resource`
 
-And in controller without model
+And in every controller **without a model**
 `load_and_authorize_resource class: false`
+
+Inside `admin_ability.rb` you need to declare the *non-model* authorizations with a symbol *not* a class
+For example,
+`can :manage, Article`
+`can :manage, :dashboard`
 
 #### Contribute
 
