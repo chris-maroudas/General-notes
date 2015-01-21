@@ -22,9 +22,22 @@ Code should follow the official Rails guide (https://github.com/bbatsov/rails-st
 
 ####Notes
 Leave notes in code with:
+
 `#TODO: Refactor method`
+
 `#FIXME: Fix this bug`
+
 and see an overview of them with rake:notes
+
+####Indexes
+You should index:
+
+Foreign keys
+
+Fields that you search or sort by
+
+On join tables, you should index:
+key1, key2, [key1, key2], [key2, key1]
 
 #### Contribute
 
