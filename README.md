@@ -12,13 +12,19 @@ For example,
 `can :manage, Article`
 `can :manage, :dashboard`
 
-
 #### Translations
 If a model has translations include a default scope in your model to avoid N+1 queries
+
 `default_scope -> { includes(:translations) }`
 
+####Style guide
+Code should follow the official Rails guide (https://github.com/bbatsov/rails-style-guide)
 
-
+####Notes
+Leave notes in code with:
+`#TODO: Refactor method`
+`#FIXME: Fix this bug`
+and see an overview of them with rake:notes
 
 #### Contribute
 
